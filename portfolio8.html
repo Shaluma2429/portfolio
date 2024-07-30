@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalini</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome-5.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/unicons.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="home-mazin dark-version">
+    <div class="latest-project-area rts-section-gapTop" id="works">
+        <div class="container-two">
+            <div class="row">
+                <div class="col-12">
+                    <div class="left-title-mazin button">
+                        <div class="title-btn-area-title">
+                            <div class="subtitle">
+                                <img src="assets/images/about/shape/03.png" alt="">
+                                <span>Peojects</span>
+                            </div>
+                            <h3 class="title text-anim">
+                               PHOTO FRAMS
+                            </h3>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                
+                <!-- Portfolio Gallery Grid -->
+                <div class="row">
+                  <div class="column nature">
+                    <div class="content">
+                      <img src="./assets/images/mockups/mockups/photo frams/photo 1.jpg" alt="Mountains" style="width:100%">
+                      <h4>PHOTO-1</h4>
+                      <p></p>
+                    </div>
+                  </div>
+                   <div class="column nature">
+                    <div class="content">
+                    <img src="./assets/images/mockups/mockups/photo frams/photo 2.jpg" alt="Lights" style="width:100%" >
+                      <h4>PHOTO-2</h4>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="./assets/images/mockups/mockups/photo frams/photo 3.jpg" alt="Nature" style="width:100%" >
+                      <h4>PHOTO-3</h4>
+                      <p> </p>
+                    </div>
+                  </div> 
+
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="./assets/images/mockups/mockups/photo frams/photo 4.jpg" alt="Nature" style="width:100%" >
+                      <h4>PHOTO-4</h4>
+                      <p> </p>
+                    </div>
+                  </div> 
+
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="./assets/images/mockups/mockups/photo frams/photo 5.jpg" alt="Nature" style="width:100%" >
+                      <h4>PHOTO-5</h4>
+                      <p> </p>
+                    </div>
+                  </div> 
+
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="./assets/images/mockups/mockups/photo frams/photo 6.jpg" alt="Nature" style="width:100%" >
+                      <h4>PHOTO-6</h4>
+                      <p> </p>
+                    </div>
+                  </div> 
+
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="./assets/images/mockups/mockups/photo frams/photo 7.jpg" alt="Nature" style="width:100%" >
+                      <h4>PHOTO-7</h4>
+                      <p> </p>
+                    </div>
+                  </div> 
+
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="./assets/images/mockups/mockups/photo frams/photo 8.jpg" alt="Nature" style="width:100%" >
+                      <h4>PHOTO-8</h4>
+                      <p> </p>
+                    </div>
+                  </div> 
+
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="./assets/images/mockups/mockups/photo frams/photo 9.jpg" alt="Nature" style="width:100%" >
+                      <h4>PHOTO-9</h4>
+                      <p> </p>
+                    </div>
+                  </div> 
+
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="./assets/images/mockups/mockups/photo frams/photo 10.jpg" alt="Nature" style="width:100%" >
+                      <h4>PHOTO-10</h4>
+                      <p> </p>
+                    </div>
+                  </div> 
+                  
+                 
+
+
+
+
+                  
+                <script>
+                    filterSelection("all")
+                    function filterSelection(c) {
+                      var x, i;
+                      x = document.getElementsByClassName("column");
+                      if (c == "all") c = "";
+                      for (i = 0; i < x.length; i++) {
+                        w3RemoveClass(x[i], "show");
+                        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                      }
+                    }
+                    
+                    function w3AddClass(element, name) {
+                      var i, arr1, arr2;
+                      arr1 = element.className.split(" ");
+                      arr2 = name.split(" ");
+                      for (i = 0; i < arr2.length; i++) {
+                        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                      }
+                    }
+                    
+                    function w3RemoveClass(element, name) {
+                      var i, arr1, arr2;
+                      arr1 = element.className.split(" ");
+                      arr2 = name.split(" ");
+                      for (i = 0; i < arr2.length; i++) {
+                        while (arr1.indexOf(arr2[i]) > -1) {
+                          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                        }
+                      }
+                      element.className = arr1.join(" ");
+                    }
+                    
+                    
+                    // Add active class to the current button (highlight it)
+                    var btnContainer = document.getElementById("myBtnContainer");
+                    var btns = btnContainer.getElementsByClassName("btn");
+                    for (var i = 0; i < btns.length; i++) {
+                      btns[i].addEventListener("click", function(){
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                      });
+                    }
+                    </script>
+                    
+    
+    
+
+
+
+
+
+</body>
+</html>
